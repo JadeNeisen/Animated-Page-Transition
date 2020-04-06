@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.page1,
+.page2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-shadow: 0.01em 0.01em 0.12em rgb(0, 0, 255);
+}
+.page2 h1 {
+  text-shadow: 0.01em 0.01em 0.12em rgb(255, 3, 255);
+}
+.page1 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: 50px;
+  border: 1px solid blue;
+  padding: 10px 30px;
+  box-shadow: 3px blue;
+  background-color: rgba(127, 6, 240, 0.5);
+}
+.page2 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: 50px;
+  border: 1px solid purple;
+  padding: 10px 30px;
+  box-shadow: 3px purple;
+  background-color: rgba(255, 0, 157, 0.5);
+  text-shadow: 0.01em 0.01em 0.12em rgb(212, 0, 255);
+}
+.page1 {
+  background-color: purple;
+}
+.page2 {
+  background-color: blue;
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
